@@ -33,7 +33,7 @@ make all FOLDER_NAME=package OUTPUT_PATH=dist/
 
 - Creates the folder specified by `FOLDER_NAME`.
 - Copies `requirements.txt` into `$(FOLDER_NAME)`.
-- Uses the [lambci/lambda:build-python3.9](https://hub.docker.com/r/lambci/lambda/) Docker image to install dependencies into the correct directory structure for Lambda layers (`python/lib/python3.6/site-packages/`).
+- Uses the [public.ecr.aws/sam/build-python3.13](https://gallery.ecr.aws/sam/build-python3.13) Docker image to install dependencies into the correct directory structure for Lambda layers (`python/lib/python3.13/site-packages/`).
 - Outputs "Done" when complete.
 
 
